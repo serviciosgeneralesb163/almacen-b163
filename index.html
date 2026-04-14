@@ -188,7 +188,7 @@
       background: #fff5f5;
       color: #7f0000;
     }
-    .tipo-btn.active-entrada {
+    .tipo-btn.active-Ingreso {
       border-color: #15803d;
       background: #f0fdf4;
       color: #14532d;
@@ -380,8 +380,8 @@
     <div class="tipo-selector">
       <div class="tipo-btn active-salida" id="btn-tipo-salida"
            onclick="seleccionarTipo('Salida')">📤 Salida</div>
-      <div class="tipo-btn" id="btn-tipo-entrada"
-           onclick="seleccionarTipo('Entrada')">📥 Entrada</div>
+      <div class="tipo-btn" id="btn-tipo-Ingreso"
+           onclick="seleccionarTipo('Ingreso')">📥 Ingreso</div>
     </div>
     <input type="hidden" id="mov-tipo" value="Salida">
 
@@ -683,8 +683,8 @@ function seleccionarTipo(tipo) {
   document.getElementById("mov-tipo").value = tipo;
   document.getElementById("btn-tipo-salida").className =
     "tipo-btn" + (tipo === "Salida"  ? " active-salida"  : "");
-  document.getElementById("btn-tipo-entrada").className =
-    "tipo-btn" + (tipo === "Entrada" ? " active-entrada" : "");
+  document.getElementById("btn-tipo-Ingreso").className =
+    "tipo-btn" + (tipo === "Ingreso" ? " active-Ingreso" : "");
 }
 
 // ============================================================
